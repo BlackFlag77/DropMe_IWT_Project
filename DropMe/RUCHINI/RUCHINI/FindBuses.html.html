@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Find Buses</title>
+    <link rel="stylesheet" href="css/findBuses.css">
+    <script src="js/findBuses.js"></script>
+</head>
+<body>
+    <h1><center>Find Buses</center></h1>
+    <form name="search" action="../RUCHINI/bus details.html" onsubmit="return validateForm()" method="post">
+        <label for="Departure">Departure (From):</label>
+        <select id="Departure" name="Departure" required>
+            <option value="none" selected disabled hidden> Select Departure</option>
+            <option value="Kandy">Kandy</option>
+            <option value="Kurunagala">Kurunagala</option>
+            <option value="Colombo">Colombo</option>
+            <option value="Anuradhapura">Anuradhapura</option>
+        </select>
+        <br>
+        <br>
+        <label for="Destination">Destination (to):</label>
+        <select id="Destination" name="Destination" required>
+            <option value="none" selected disabled hidden> Select Destination</option>
+            <option value="Kandy">Kandy</option>
+            <option value="Kurunagala">Kurunagala</option>
+            <option value="Colombo">Colombo</option>
+            <option value="Anuradhapura">Anuradhapura</option>
+        </select>
+        <br>
+        <br>
+        <label for="Journey Date">Journey Date:</label>
+        <input type="date" name="dob" required>
+        <br>
+        <br>
+        <label for="Time">Time:</label>
+        <select id="Time" name="Time" required>
+            <option value="none" selected disabled hidden> Select Time</option>
+            <option value="8.00 AM">8.00 AM</option>
+            <option value="10.00 AM">10.00 AM</option>
+            <option value="12.00 AM">12.00 AM</option>
+            <option value="2.00 PM">2.00 PM</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+</body>
+</html>

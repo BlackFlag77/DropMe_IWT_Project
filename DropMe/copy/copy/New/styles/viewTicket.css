@@ -1,0 +1,68 @@
+body {
+	background-image: url("../src/image/image.jfif");
+    background-color: lemonchiffon;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    margin: 2% auto;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.box2 {
+	display: block;
+	width:100%;
+	box-sizing: border-box;
+	margin:16px 0;
+	border:0;
+	background:#111;
+	padding: 20px 40px;
+	outline: none;
+	color: #add;
+	transition: 0.5s;
+	border-radius:8px;
+
+	Inquiry_Type
+    margin-top: 20px;
+}
+
+.box2 label {
+    font-weight: bold;
+}
+
+.box2 input[type="text"],
+.box2 input[type="number"],
+.box2 input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.box2 button[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.box2 button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.box2 label[style="color:red;"] {
+    color: red;
+}

@@ -1,0 +1,14 @@
+Project Group ID : KDY_Wd_04
+Batch No 	 : Batch 02 (Kandy Centre)
+Topic 		 : Online Public Transport Reservation System
+Project link 	 : 
+
+Group member details:
+
+Memeber ID	Member name		Contact No	Email address		Implemented funtions
+IT22141842	Bandara S.M.D.M.	0773225669	IT22141842@my.sliit.lk	Driver (DriverRegistraion, Driver profile)
+IT22112446	Kaluarachchi S.M.	0743053630	IT22112446@my.sliit.lk	Registration/Login (Login, Register, User profile)	
+IT22129758	Edirisinghe E.A.K.	0767773029	IT22129758@my.sliit.lk	Payment (Payment method, Details, Successful payment)
+IT22175984	Ekanayake E.M.C.N.K.	0706664334	IT22175984@my.sliit.lk	Ticket (Ticket details, Ticket cancellation)
+IT22197832	Tennakoon T.M.S.S.	0772254473	IT22197832@my.sliit.lk	Feedback (Feedback page, Help centre, Contact us, About Us)
+IT22547088	Wijesooriya T.G.R.N.S.	0762058433	IT22547088@my.sliit.lk	Reservation (Find buses, Select buses, Ticket Selection)

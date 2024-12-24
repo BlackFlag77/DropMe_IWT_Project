@@ -1,0 +1,98 @@
+**{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container{
+    min-height: 100vh;
+    background: #e5f9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 120px;
+
+
+}
+
+.container form{
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 500px;
+    
+}
+
+.container form .inputText{
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.container form .inputText label{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+
+}
+
+.container form .inputText input,
+.container form .inputText select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: #444;
+}
+
+.container form .flexbox{
+    display: flex;
+    gap: 25px;
+}
+
+.container form .flexbox .inputText{
+    flex: 1 1 150px;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3ba728;
+}
+
+h2{
+    color: #28a745;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5f9e9;
+    
+}
+.center-button {
+    text-align: center;
+}

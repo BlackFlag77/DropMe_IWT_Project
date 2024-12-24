@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Bus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+			background-image: url(../src/'21-2720_DSE_Web-1900x795-1.jpg'); 
+            background-size: cover; 
+            background-attachment: fixed; 
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Make the form opaque */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .container h1 {
+            text-align: center;
+        }
+        .error-message {
+            color: red;
+            text-align: center;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input[type="text"],
+        form select,
+        form input[type="time"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        form button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin: 10px auto; 
+            display: block; 
+            cursor: pointer;
+        }
+				header {
+            background-color: #5B93BE; 
+            color: #fff; 
+            padding: 5px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Add New Bus</h1>
+</header>
+<form action="addbuses.php" method= "POST">
+	<!-- code-->
+    <div class="container">
+        <form id="busForm" onsubmit="return validateForm()">
+            <label> Bus No:</label>
+            <input type="text" id="busNo" name="busNo" required>
+
+            <label> Route No:</label>
+            <input type="text" id="busrouteNo" name="busrouteNo" required>
+
+            <label> Drive Id:</label>
+            <input type="text" id="busdriveId" name="busdriveId" required>
+
+            <label>Bus Type:</label>
+            <select id="busType" name="busType" required>
+                <option value="">Select Bus Type</option>
+                <option value="AC">AC</option>
+                <option value="Non-AC">Non-AC</option>
+            </select>
+
+            <label >No Of Seats:</label>
+            <input type="text" id="busNoOfSeat" name="busNoOfSeat" required>
+
+
+            <label for="facilities">Facilities:</label>
+            <input type="checkbox" id="acFacility" name="facilities" value="AC"> AC
+            <input type="checkbox" id="wifiFacility" name="facilities" value="WiFi"> WiFi
+
+            <button type="submit">Add Bus</button>
+        </form>
+        <p class="error-message" id="errorMessage"></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            var busNo = document.getElementById("busNo").value;
+            var busrouteNo = document.getElementById("busrouteNo").value;
+            var busdriveId = document.getElementById("busdriveId").value;
+            var busType = document.getElementById("busType").value;
+            var busNoOfSeat = document.getElementById("busNoOfSeat").value;
+            var acFacility = document.getElementById("acFacility").checked;
+            var wifiFacility = document.getElementById("wifiFacility").checked;
+            var errorMessage = document.getElementById("errorMessage");
+
+            if (busNo.trim() === "" busrouteNo||  === "" || busdriveId() === "" || busType === "" || busNoOfSeat === "") {
+                errorMessage.textContent = "Please fill out all required fields.";
+                return false;
+            }
+
+            if (!acFacility && !wifiFacility) {
+                errorMessage.textContent = "Select at least one facility (AC/WiFi).";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

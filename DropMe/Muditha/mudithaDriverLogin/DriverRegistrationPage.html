@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DropMe</title>
+        <link rel = "stylesheet" href = "STYLES/styles.css">
+    </head>
+
+    <div class="mainContainer">
+            <header>
+				<img id = "logo" src = "SRC/IMAGE/logo.jpg" width = "200px" height = "200px">
+				<h1 class="header-title">Drop Me</h1>
+				<div class="profile"><img src="SRC/IMAGE/User.png" width="100px"></div><br>
+				
+				<title>Footer Design</title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="css/style.css">
+				<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+			</header>
+			
+			<div class="d3">
+				<h5 class="header-title">Online Public Transport Reservation System</h5>
+				<a href="http://localhost/sajani/manodya/login.php"><input type="button" value="Log in" id="btn">
+					<a href="http://localhost/sajani/Muditha/DriverProfilePage.php"><input type="button" value="profile" id="btn">
+					
+			</div>
+				
+		<body>
+				<div class="main">
+					
+					<hr id = "rep">
+					
+					<ul class = "menu" >
+					<li class = "menu" > <a href = "index.html" > Home </a> </li>
+					<li class = " menu" > <a href = "https://courseweb.sliit.lk/my/"> Ticket </a> </li>
+					<li class = " menu" > <a href = "ContactUs.html" =""> Contacts Us </a> </li>
+					<li class = "menu" > <a href = "https://courseweb.sliit.lk/my/"> About Us </a> </li>
+					<li class = " menu" > <a href = " Register.html" > Reserve </a> </li>
+					</ul>
+					<br>
+				</div>
+			
+			<div class = "body">
+                <form id="form" action="submitForm.php" method="post">
+                    <h3 class="formHead">Registration Form</h3><br>
+                
+                    <label>First Name :</label>
+                    <input type="text" id="fname" name="fName" placeholder="Enter First Name"><br>
+            
+                    <label>Last Name :</label>
+                    <input type="text" id="lname" name="lName" placeholder="Enter Last Name"><br>
+                                        
+                    <label>Mobile Number :</label>
+                    <input type="phone" name="mobile" placeholder="Enter Mobile Number" pattern="[0-9]{10}" required><br>
+                    
+                    <label>Address :</label>
+                    <textarea name="address" rows="3" columns="10" placeholder="Enter Address"></textarea><br>
+                    
+                    <label>Date of Birth :</label>
+                    <input type="date" name="dob"><br>
+    
+                    <label>Username :</label>
+                    <input type="text" name="userName" placeholder="Enter Username"><br>
+                    
+                    <label for="pwd">Password :</label>
+                    <input type="password" id="pass" name="pwd" placeholder="Enter Password"><br>
+                    
+                    <label for="ConPwd">Confirm Password :</label>
+                    <input type="password" id="rePass" name="rePwd" placeholder="Confirm Password"><br>
+                    
+                    <label>Licence No :</label>
+                    <input type="text" name="lice" placeholder="License Number"><br>
+            
+                    <label>Experience :</label>
+                    <input type="text" name="Exp" placeholder="Experience" required><br>
+
+                    <input type="submit" id="submit"  name="subBtn" value="Register" ><br><br>
+                    
+                    <div id="error" class="error-message"></div>
+                </form>
+            </div>
+		
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer-col">
+							<h4>Contact</h4>
+							<ul>
+								<li><a href="#">+94123456789</a></li>
+								<li><a href="#">+94812345679</a></li>
+								<li><a href="#">someone@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Quick Access</h4>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Reserve</a></li>
+								<li><a href="#">Ticket</a></li>
+								<li><a href="ContactUs.html">Contact Us</a></li>
+								<li><a href="#">About US</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Follow Us</h4>
+							<div class="social-links">
+								<div class="fb">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+								</div>
+								<div class="tw">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+								</div>
+								<div class="ig">
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</div>
+								<div class="ln">
+									<a href="#"><i class="fab fa-linkedin-in"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>
+    </div>
+</html>

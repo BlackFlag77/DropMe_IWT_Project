@@ -1,0 +1,241 @@
+ *, *:before, *:after {
+  box-sizing: border-box;
+}
+body{
+	display:center;
+	flex-direction:column;
+	color:black;
+	align-items:center;
+	justify-content:center;
+	height:100vh
+	font-family:'lato','sans-serif';
+	background-image: url(../src/background.jpg);
+	background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+.container{
+	    display: flex;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 30%; 
+  margin: 0 auto; 
+}
+
+input[type="button"] {
+  background-color: blue; 
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center; 
+  align-self: center;
+}
+
+input[type="button"]:hover {
+  background-color: darkblue;
+}
+
+.plane {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+
+.available label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.available label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #F42536; 
+}
+
+.available input[type="checkbox"] {
+  display: none;
+}
+
+.available input[type="checkbox"]:checked + label::before {
+  background-color: red; 
+  border: 2px solid black; 
+}
+
+
+.booked label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.booked label::before {
+  content: "X"; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid black; 
+  background-color: whute; 
+  color: black;
+}
+
+.booked input[type="checkbox"] {
+  display: none;
+}
+
+.selected label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.selected label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #BADA55; 
+}
+
+.selected input[type="checkbox"] {
+  display: none;
+}
+
+.selected input[type="checkbox"]:checked + label::before {
+  background-color: green;
+  border: 2px solid black; 
+}
+
+
+.exit {
+  position: relative;
+  height: 50px;
+}
+.exit:before, .exit:after {
+  content: "EXIT";
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0px 2px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  display: block;
+  position: absolute;
+  background: green;
+  color: white;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.exit:before {
+  left: 0;
+}
+.exit:after {
+  right: 0;
+}
+
+.fuselage {
+  width: 250%; 
+  margin: 0 auto; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.seat {
+  display: flex;
+  flex: 0 0 14.28571428571429%;
+  padding: 5px;
+  position: relative;
+}
+.seat:nth-child(3) {
+  margin-right: 14.28571428571429%;
+}
+.seat input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.seat input[type=checkbox]:checked + label {
+  background: #bada55;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.seat input[type=checkbox]:disabled + label {
+  background: #dddddd;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.seat input[type=checkbox]:disabled + label:after {
+  content: "X";
+  text-indent: 0;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.seat input[type=checkbox]:disabled + label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.seat label {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 4px 0;
+  background: #F42536;
+  border-radius: 5px;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.seat label:before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+.seat label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px #5C6AFF;
+}
